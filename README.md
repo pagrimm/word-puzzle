@@ -16,7 +16,7 @@ Exercise for Epicodus to make a word puzzle generator to practice using for loop
 
 HTML  
 CSS  
-Bootstrap
+Bootstrap  
 jQuery
 
 ## Legal
