@@ -1,5 +1,5 @@
+//business logic
 function makePuzzle(inputArray, vowelsArray) {
-  let output;
   for (let index = 0; index < inputArray.length; index++) {
     for (let index2 = 0; index2 < vowelsArray.length; index2++) {
       if (inputArray[index] === vowelsArray[index2]) {
@@ -7,19 +7,14 @@ function makePuzzle(inputArray, vowelsArray) {
       }
     }
   }
-  output = (inputArray.join(""));
-  return output;
+  return inputArray.join("");
 }
-
 
 $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
-    let vowelsArray = [
-      "a", "e", "i", "o", "u"
-    ];
-    let input = $("#input").val();
-    let inputArray = input.split("");
+    let vowelsArray = ["a", "e", "i", "o", "u"];
+    let inputArray = $("#input").val().split("");
     $("#input").val("");
     $("#output").text(makePuzzle(inputArray,vowelsArray));
   });
@@ -30,5 +25,4 @@ $(document).ready(function () {
 //    inputArray[input] = "-"
 //  })
 //})
-
 ///[aeiou]/.test("a") = true
