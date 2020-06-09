@@ -1,3 +1,17 @@
+function makePuzzle(inputArray, vowelsArray) {
+  let output;
+  for (let index = 0; index < inputArray.length; index++) {
+    for (let index2 = 0; index2 < vowelsArray.length; index2++) {
+      if (inputArray[index] === vowelsArray[index2]) {
+        inputArray[index] = "-";
+      }
+    }
+  }
+  output = (inputArray.join(""));
+  return output;
+}
+
+
 $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
@@ -6,15 +20,8 @@ $(document).ready(function () {
     ];
     let input = $("#input").val();
     let inputArray = input.split("");
-    for (let index = 0; index < inputArray.length; index++) {
-      for (let index2 = 0; index2 < vowelsArray.length; index2++) {
-        if (inputArray[index] === vowelsArray[index2]) {
-          inputArray[index] = "-";
-        }
-      }
-    }
     $("#input").val("");
-    $("#output").text(inputArray.join(""));
+    $("#output").text(makePuzzle(inputArray,vowelsArray));
   });
 });
 
