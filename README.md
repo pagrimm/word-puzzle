@@ -1,5 +1,5 @@
 # Word Puzzle
-** for Epicodus**
+**for Epicodus**
 **By Peter Grimm, Kate Skorija 06.09.2020**
 
 ## Description
@@ -21,5 +21,5 @@ jQuery
 
 ## Legal
 
-Copyright (c) 2020, **_Peter Grimm_**  **_Kate Skorija_**    
+Copyright (c) 2020, **_Peter Grimm_** & **_Kate Skorija_**    
 This software is licensed under the MIT license.
